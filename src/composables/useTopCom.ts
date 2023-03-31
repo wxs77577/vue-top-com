@@ -46,10 +46,9 @@ export const useTopCom = (options: TopComOptions = {}) => {
               return h(config.render.bind(this)(...args));
             }
             try {
-              const vnode = (options.compiler ?? defaultCompiler).compile(
-                config
-              );
-              return h(vnode(...args));
+              const compiler = options.compiler ?? defaultCompiler;
+              const render = compiler.compile(config);
+              return render(...args);
             } catch (e: any) {
               return h("span", `Template compile error: ${e}`);
             }
@@ -57,7 +56,7 @@ export const useTopCom = (options: TopComOptions = {}) => {
           ...config,
         };
       },
-      ...(options.asyncComponentOptions ?? {})
+      ...(options.asyncComponentOptions ?? {}),
     });
     Com.name = config.name;
     if (config.global) {

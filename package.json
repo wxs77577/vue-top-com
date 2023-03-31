@@ -1,7 +1,7 @@
 {
   "name": "vue-top-com",
   "description": "Load vuejs components from json in production mode dynamically.",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "keywords": [
     "vue.js",
     "vuejs",
