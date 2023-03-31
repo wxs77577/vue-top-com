@@ -16,7 +16,6 @@ export const urlLoaderPlugin = (): TopComPlugin => {
       };
 
       const load = async (url: string) => {
-        await new Promise(r => setTimeout(r, 100000))
         const uri = new URL(url, location.href);
         uri.searchParams.set("__v__", getNextVersion(url).toString());
         const res = await fetch(uri);
