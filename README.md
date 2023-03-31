@@ -1,6 +1,9 @@
 # vue-top-com
 
+https://wxs77577.github.io/vue-top-com/
+
 Load vuejs components from json in production mode dynamically.
+
 
 ## Install
 ```sh

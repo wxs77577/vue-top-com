@@ -2,12 +2,14 @@
   "name": "vue-top-com",
   "description": "Load vuejs components from json in production mode dynamically.",
   "version": "0.3.0",
+  "homepage": "https://wxs77577.github.io/vue-top-com/",
   "keywords": [
     "vue.js",
     "vuejs",
     "json component",
     "low-code"
   ],
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
