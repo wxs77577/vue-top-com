@@ -1,0 +1,13 @@
+{
+  "name": "RemoteCom",
+  "data": {
+    "count": 1
+  },
+  "node": {
+    "tag": "el-tag",
+    "props" : {
+      "@click": "count++"
+    },
+    "text": "I'm component from remote api json. {{count}}"
+  }
+}
